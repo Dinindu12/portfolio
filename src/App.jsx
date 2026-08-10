@@ -34,7 +34,15 @@ const projects = [
     tech: ['HTML', 'CSS', 'JS', 'E-commerce'],
     link: 'https://dinindu12.github.io/techzone/',
     icon: 'fa-laptop'
-  }
+  },
+  {
+  id: 5,
+  title: 'Social Downloader Pro',
+  desc: 'One-tap video & photo downloader from YouTube, TikTok, Instagram, Facebook, Twitter, Pinterest, Reddit, Snapchat and more. No watermark, fast and free.',
+  tech: ['HTML', 'CSS', 'JS', 'API'],
+  link: 'https://dinindu12.github.io/social/',
+  icon: 'fa-download'
+},
 ];
 
 function App() {
