@@ -29,11 +29,15 @@
         <span class="logo-icon">DJH</span>
         <span class="logo-text">Dinindu</span>
       </div>
+   
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
+        <li><a href="#process">Process</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#faq">FAQ</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <div class="hamburger" id="hamburger">
@@ -48,6 +52,9 @@
   <section id="home" class="hero">
     <div class="container hero-container">
       <div class="hero-content">
+        <div class="status-badge hero-status">
+          <span class="dot"></span> Available for Freelance
+        </div>
         <p class="hero-greeting">Hi, I'm</p>
         <h1 class="hero-name">Dinindu Jayampathi <br /> Hettiarachchi</h1>
         <p class="hero-title">
@@ -59,12 +66,15 @@
         <div class="hero-buttons">
           <a href="#projects" class="btn btn-primary">View My Work</a>
           <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          <a href="https://calendly.com/your-link" target="_blank" class="btn btn-outline">
+            <i class="fas fa-calendar-check"></i> Book a Call
+          </a>
         </div>
         <div class="hero-social">
           <a href="https://github.com/dinindu12" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-          <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-          <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-          <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+          <a href="https://linkedin.com/in/dinindu-jayampathi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://x.com/xphunter9T9" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://www.youtube.com/@XPHunter9t9" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
         </div>
       </div>
       <div class="hero-image">
@@ -95,6 +105,46 @@
           <h3>Interests</h3>
           <p>MTA Model Designs</p>
           <p style="color: #6c63ff;">Game Top-ups &amp; Automation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROCESS / HOW I WORK ===== -->
+  <section id="process" class="process">
+    <div class="container">
+      <h2 class="section-title">How I <span>Work</span></h2>
+      <p class="section-subtitle">A simple 5-step process to bring your ideas to life</p>
+      <div class="process-steps">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-icon"><i class="fas fa-comment"></i></div>
+          <h3>Discovery</h3>
+          <p>We discuss your goals, vision, and requirements.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-icon"><i class="fas fa-pencil-ruler"></i></div>
+          <h3>Planning &amp; Design</h3>
+          <p>I create wireframes and design mockups.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-icon"><i class="fas fa-code"></i></div>
+          <h3>Development</h3>
+          <p>I build your project with clean, modern code.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">04</div>
+          <div class="step-icon"><i class="fas fa-check-circle"></i></div>
+          <h3>Review &amp; Feedback</h3>
+          <p>You review and provide feedback for changes.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">05</div>
+          <div class="step-icon"><i class="fas fa-rocket"></i></div>
+          <h3>Launch &amp; Deploy</h3>
+          <p>We launch your project to the world!</p>
         </div>
       </div>
     </div>
@@ -131,12 +181,39 @@
     </div>
   </section>
 
-  <!-- ===== PROJECTS ===== -->
+  <!-- ===== PROJECTS with Filter ===== -->
   <section id="projects" class="projects">
     <div class="container">
       <h2 class="section-title">My <span>Projects</span></h2>
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="3d">3D Models</button>
+        <button class="filter-btn" data-filter="bot">Bots</button>
+      </div>
       <div class="projects-grid" id="projects-grid">
-        <!-- Projects will be loaded by JavaScript -->
+        <!-- Projects loaded by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h2 class="section-title">Client <span>Testimonials</span></h2>
+      <p class="section-subtitle">What people say about working with me</p>
+      <div class="testimonials-grid" id="testimonials-grid">
+        <!-- Testimonials loaded by JavaScript -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section id="faq" class="faq">
+    <div class="container">
+      <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+      <div class="faq-container" id="faq-container">
+        <!-- FAQ items loaded by JavaScript -->
       </div>
     </div>
   </section>
@@ -157,19 +234,24 @@
             <i class="fas fa-map-marker-alt"></i>
             <span>Colombo, Sri Lanka</span>
           </div>
+          <div class="contact-cta">
+            <a href="https://calendly.com/your-link" target="_blank" class="btn btn-primary">
+              <i class="fas fa-calendar-check"></i> Book a Call
+            </a>
+          </div>
           <div class="contact-social">
             <a href="https://github.com/dinindu12" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://linkedin.com/in/dinindu-jayampathi" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="https://x.com/xphunter9T9" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.youtube.com/@XPHunter9t9" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
           </div>
         </div>
-        <form class="contact-form" action="https://formspree.io/f/yourFormID" method="POST">
+        <form class="contact-form">
           <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name" />
           <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email" />
           <textarea name="message" rows="5" placeholder="Your Message" aria-label="Your Message"></textarea>
           <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+</form>
       </div>
     </div>
   </section>
@@ -183,5 +265,14 @@
   </footer>
 
   <script src="script.js"></script>
+
+  <!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script>
+  (function() {
+    emailjs.init("6Zll8VREdcrvegE_0");
+  })();
+</script>
 </body>
 </html>
