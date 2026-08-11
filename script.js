@@ -197,7 +197,27 @@ function toggleFAQ(element) {
   }
 }
 
-// ===== EMAILJS CONTACT FORM =====
+// ===== SCROLL TO HOME ON PAGE LOAD =====
+window.addEventListener('load', function() {
+  // First scroll to top instantly
+  window.scrollTo({
+    top: 0,
+    behavior: 'instant'
+  });
+  
+  // Then smoothly scroll to home section
+  setTimeout(function() {
+    const homeSection = document.getElementById('home');
+    if (homeSection) {
+      homeSection.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }, 200);
+});
+
+// ===== MAIN INIT =====
 document.addEventListener('DOMContentLoaded', function() {
   // Render all sections
   renderProjects('all');
@@ -221,7 +241,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Smooth scroll
+  // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
