@@ -1,5 +1,4 @@
-import React from 'react';
-
+// ===== PROJECTS DATA =====
 const projects = [
   {
     id: 1,
@@ -51,33 +50,59 @@ const projects = [
   }
 ];
 
-function Projects() {
-  return (
-    <section id="projects" className="projects">
-      <div className="container">
-        <h2 className="section-title">My <span>Projects</span></h2>
-        <div className="projects-grid">
-          {projects.map((project) => (
-            <div key={project.id} className="project-card">
-              <div className="project-icon">
-                <i className={`fas ${project.icon}`}></i>
-              </div>
-              <h3>{project.title}</h3>
-              <p>{project.desc}</p>
-              <div className="project-tech">
-                {project.tech.map((t, idx) => (
-                  <span key={idx}>{t}</span>
-                ))}
-              </div>
-              <a href={project.link} target="_blank" rel="noreferrer" className="btn btn-primary project-btn">
-                Live Demo <i className="fas fa-arrow-right"></i>
-              </a>
-            </div>
-          ))}
-        </div>
+// ===== RENDER PROJECTS =====
+function renderProjects() {
+  const grid = document.getElementById('projects-grid');
+  if (!grid) return;
+
+  grid.innerHTML = projects.map(project => `
+    <div class="project-card">
+      <div class="project-icon">
+        <i class="fas ${project.icon}"></i>
       </div>
-    </section>
-  );
+      <h3>${project.title}</h3>
+      <p>${project.desc}</p>
+      <div class="project-tech">
+        ${project.tech.map(t => `<span>${t}</span>`).join('')}
+      </div>
+      <a href="${project.link}" target="_blank" class="btn btn-primary project-btn">
+        Live Demo <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+  `).join('');
 }
 
-export default Projects;
+// ===== HAMBURGER MENU =====
+document.addEventListener('DOMContentLoaded', function() {
+  renderProjects();
+
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.querySelector('.nav-links');
+
+  if (hamburger && navLinks) {
+    hamburger.addEventListener('click', function() {
+      navLinks.classList.toggle('active');
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('active');
+      });
+    });
+  }
+});
+
+// ===== SMOOTH SCROLL =====
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    const href = this.getAttribute('href');
+    if (href === '#') return;
+    
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  });
+});
