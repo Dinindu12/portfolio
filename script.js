@@ -62,7 +62,16 @@ const projects = [
     link: 'https://dinindu12.github.io/weather-app/',
     icon: 'fa-cloud-sun',
     category: 'web'
-  }
+  },
+  {
+  id: 8,
+  title: 'Currency Converter',
+  desc: 'Real-time currency converter with live exchange rates. Convert between 20+ currencies with instant results.',
+  tech: ['HTML', 'CSS', 'JS', 'API'],
+  link: 'https://dinindu12.github.io/Currency-Converter/',
+  icon: 'fa-money-bill-wave',
+  category: 'web'
+}
 ];
 
 // ===== TESTIMONIALS DATA =====
