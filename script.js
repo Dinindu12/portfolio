@@ -53,7 +53,7 @@ const projects = [
     link: 'https://dinindu12.github.io/qr_generator/',
     icon: 'fa-qrcode',
     category: 'web'
-  }
+  },
   {
   id: 7,
   title: 'Weather Forecast App',
