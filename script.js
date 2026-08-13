@@ -208,13 +208,11 @@ function toggleFAQ(element) {
 
 // ===== SCROLL TO HOME ON PAGE LOAD =====
 window.addEventListener('load', function() {
-  // First scroll to top instantly
   window.scrollTo({
     top: 0,
     behavior: 'instant'
   });
   
-  // Then smoothly scroll to home section
   setTimeout(function() {
     const homeSection = document.getElementById('home');
     if (homeSection) {
@@ -228,13 +226,11 @@ window.addEventListener('load', function() {
 
 // ===== MAIN INIT =====
 document.addEventListener('DOMContentLoaded', function() {
-  // Render all sections
   renderProjects('all');
   renderTestimonials();
   renderFAQ();
   setupFilter();
 
-  // Hamburger menu
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.querySelector('.nav-links');
 
@@ -250,7 +246,6 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   }
 
-  // Smooth scroll for nav links
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
@@ -264,32 +259,27 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // ===== CONTACT FORM =====
   const contactForm = document.querySelector('.contact-form');
   
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
       
-      // Show loading state
       const submitBtn = this.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
       
-      // Get form data
       const name = this.querySelector('input[name="name"]').value;
       const email = this.querySelector('input[name="email"]').value;
       const message = this.querySelector('textarea[name="message"]').value;
       
-      // Get current time
       const now = new Date();
       const time = now.toLocaleString('en-US', {
         dateStyle: 'full',
         timeStyle: 'short'
       });
       
-      // EmailJS parameters
       const templateParams = {
         name: name,
         email: email,
@@ -297,7 +287,6 @@ document.addEventListener('DOMContentLoaded', function() {
         time: time
       };
       
-      // Send email using EmailJS
       emailjs.send('service_fdygfbu', 'template_zbeheni', templateParams)
         .then(function(response) {
           alert('✅ Message sent successfully! I will get back to you soon.');
@@ -315,5 +304,4 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-// Make toggleFAQ globally accessible
 window.toggleFAQ = toggleFAQ;
