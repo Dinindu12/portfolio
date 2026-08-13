@@ -55,14 +55,14 @@ const projects = [
     category: 'web'
   },
   {
-  id: 7,
-  title: 'Weather Forecast App',
-  desc: 'Real-time weather updates with 3-day forecast. Search any city and get temperature, humidity, wind speed, and more.',
-  tech: ['HTML', 'CSS', 'JS', 'API'],
-  link: 'https://dinindu12.github.io/weather-app/',
-  icon: 'fa-cloud-sun',
-  category: 'web'
-}
+    id: 7,
+    title: 'Weather Forecast App',
+    desc: 'Real-time weather updates with 3-day forecast. Search any city and get temperature, humidity, wind speed, and more.',
+    tech: ['HTML', 'CSS', 'JS', 'API'],
+    link: 'https://dinindu12.github.io/weather-app/',
+    icon: 'fa-cloud-sun',
+    category: 'web'
+  }
 ];
 
 // ===== TESTIMONIALS DATA =====
