@@ -71,6 +71,15 @@ const projects = [
   link: 'https://dinindu12.github.io/Currency-Converter/',
   icon: 'fa-money-bill-wave',
   category: 'web'
+},
+  {
+  id: 10,
+  title: '3D Product Viewer',
+  desc: 'Interactive 3D model viewer with rotation, zoom, color customization, and model gallery. Built with Three.js.',
+  tech: ['Three.js', 'HTML', 'CSS', 'JS'],
+  link: 'https://dinindu12.github.io/3d-product-viewer/',
+  icon: 'fa-cube',
+  category: '3d'
 }
 ];
 
