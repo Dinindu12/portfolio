@@ -89,7 +89,16 @@ const projects = [
   link: 'https://dinindu12.github.io/bot-analytics/',
   icon: 'fa-chart-line',
   category: 'bot'
-}
+},
+  {
+    id: 13,
+    title: 'YouTube Music Player',
+    desc: 'Search and play YouTube music with real-time playback, queue management, favorites, offline detection, and download features.',
+    tech: ['HTML', 'CSS', 'JS', 'YouTube API'],
+    link: 'https://dinindu12.github.io/youtube-music-player/',
+    icon: 'fa-youtube',
+    category: 'web'
+  }
 ];
 
 // ===== TESTIMONIALS DATA =====
