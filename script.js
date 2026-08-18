@@ -98,7 +98,16 @@ const projects = [
     link: 'https://dinindu12.github.io/youtube-music-player/',
     icon: 'fa-youtube',
     category: 'web'
-  }
+  },
+    {
+  id: 14,
+  title: 'Aruna Book Shop',
+  desc: 'Online Book Shop - Visit and Order books easily.',
+  tech: ['HTML', 'CSS', 'JS', 'Vercel'],   
+  link: 'https://bookshop-customer.vercel.app/',
+  icon: 'fa-book',
+  category: 'web'
+}
 ];
 
 // ===== TESTIMONIALS DATA =====
