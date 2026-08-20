@@ -116,7 +116,7 @@ const projects = [
   link: 'https://dinindu12.github.io/student-management/',
   icon: 'fa-student',
   category: 'web'
-    }
+},
 ];
 
 // ===== TESTIMONIALS DATA =====
