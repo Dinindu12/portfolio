@@ -109,13 +109,13 @@ const projects = [
     category: 'web'
   },
   {
-    id: 15,
-    title: 'Student Management',
-    desc: 'Full POS System - Student Management System.',
-    tech: ['HTML', 'CSS', 'JS', 'Supabase'],
-    link: 'https://dinindu12.github.io/student-management/',
-    icon: 'fa-school',
-    category: 'web'
+  id: 15,
+  title: 'Student Management',
+  desc: 'Full POS System - Student Management System.',
+  tech: ['HTML', 'CSS', 'JS', 'Supabase'],
+  link: 'https://dinindu12.github.io/student-management/',
+  icon: 'fa-user-graduate',   // <-- changed to this
+  category: 'web'
   }
 ];
 
