@@ -116,7 +116,16 @@ const projects = [
   link: 'https://dinindu12.github.io/student-management/',
   icon: 'fa-user-graduate',   // <-- changed to this
   category: 'web'
-  }
+  },
+  {
+  id: 16,
+  title: 'Network Speed Test',
+  desc: 'Real-time internet speed analyzer with ping, download & upload metrics. ISP detection, test history, and live progress ring.',
+  tech: ['HTML', 'CSS', 'JS', 'Network API'],
+  link: 'https://dinindu12.github.io/network-speed-test/',
+  icon: 'fa-wifi',
+  category: 'web'
+}
 ];
 
 // ===== TESTIMONIALS DATA =====
