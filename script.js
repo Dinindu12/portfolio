@@ -114,7 +114,7 @@ const projects = [
     desc: 'Full POS System - Student Management System.',
     tech: ['HTML', 'CSS', 'JS', 'Supabase'],
     link: 'https://dinindu12.github.io/student-management/',
-    icon: 'fa-student',
+    icon: 'fa-school',
     category: 'web'
   }
 ];
