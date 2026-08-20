@@ -64,32 +64,32 @@ const projects = [
     category: 'web'
   },
   {
-  id: 8,
-  title: 'Currency Converter',
-  desc: 'Real-time currency converter with live exchange rates. Convert between 20+ currencies with instant results.',
-  tech: ['HTML', 'CSS', 'JS', 'API'],
-  link: 'https://dinindu12.github.io/Currency-Converter/',
-  icon: 'fa-money-bill-wave',
-  category: 'web'
-},
+    id: 8,
+    title: 'Currency Converter',
+    desc: 'Real-time currency converter with live exchange rates. Convert between 20+ currencies with instant results.',
+    tech: ['HTML', 'CSS', 'JS', 'API'],
+    link: 'https://dinindu12.github.io/Currency-Converter/',
+    icon: 'fa-money-bill-wave',
+    category: 'web'
+  },
   {
-  id: 10,
-  title: '3D Product Viewer',
-  desc: 'Interactive 3D model viewer with rotation, zoom, color customization, and model gallery. Built with Three.js.',
-  tech: ['Three.js', 'HTML', 'CSS', 'JS'],
-  link: 'https://dinindu12.github.io/3d-product-viewer/',
-  icon: 'fa-cube',
-  category: '3d'
-},
+    id: 10,
+    title: '3D Product Viewer',
+    desc: 'Interactive 3D model viewer with rotation, zoom, color customization, and model gallery. Built with Three.js.',
+    tech: ['Three.js', 'HTML', 'CSS', 'JS'],
+    link: 'https://dinindu12.github.io/3d-product-viewer/',
+    icon: 'fa-cube',
+    category: '3d'
+  },
   {
-  id: 12,
-  title: 'Bot Analytics Dashboard',
-  desc: 'Real-time bot analytics dashboard with user growth, command usage, performance metrics, and message activity tracking. Full CRUD operations with live data.',
-  tech: ['HTML', 'CSS', 'JS', 'Chart.js'],
-  link: 'https://dinindu12.github.io/bot-analytics/',
-  icon: 'fa-chart-line',
-  category: 'bot'
-},
+    id: 12,
+    title: 'Bot Analytics Dashboard',
+    desc: 'Real-time bot analytics dashboard with user growth, command usage, performance metrics, and message activity tracking. Full CRUD operations with live data.',
+    tech: ['HTML', 'CSS', 'JS', 'Chart.js'],
+    link: 'https://dinindu12.github.io/bot-analytics/',
+    icon: 'fa-chart-line',
+    category: 'bot'
+  },
   {
     id: 13,
     title: 'YouTube Music Player',
@@ -99,24 +99,24 @@ const projects = [
     icon: 'fa-youtube',
     category: 'web'
   },
-    {
-  id: 14,
-  title: 'Aruna Book Shop',
-  desc: 'Online Book Shop - Visit and Order books easily.',
-  tech: ['HTML', 'CSS', 'JS', 'Vercel'],   
-  link: 'https://bookshop-customer.vercel.app/',
-  icon: 'fa-book',
-  category: 'web'
-},
-    {
-  id: 15,
-  title: 'Student Management',
-  desc: 'Full POS System - Student Management System.',
-  tech: ['HTML', 'CSS', 'JS', 'Supabase'],   
-  link: 'https://dinindu12.github.io/student-management/',
-  icon: 'fa-student',
-  category: 'web'
-},
+  {
+    id: 14,
+    title: 'Aruna Book Shop',
+    desc: 'Online Book Shop - Visit and Order books easily.',
+    tech: ['HTML', 'CSS', 'JS', 'Vercel'],
+    link: 'https://bookshop-customer.vercel.app/',
+    icon: 'fa-book',
+    category: 'web'
+  },
+  {
+    id: 15,
+    title: 'Student Management',
+    desc: 'Full POS System - Student Management System.',
+    tech: ['HTML', 'CSS', 'JS', 'Supabase'],
+    link: 'https://dinindu12.github.io/student-management/',
+    icon: 'fa-student',
+    category: 'web'
+  }
 ];
 
 // ===== TESTIMONIALS DATA =====
@@ -250,10 +250,10 @@ function renderFAQ() {
 function toggleFAQ(element) {
   const item = element.closest('.faq-item');
   const isActive = item.classList.contains('active');
-  
+
   // Close all
   document.querySelectorAll('.faq-item').forEach(el => el.classList.remove('active'));
-  
+
   // Open clicked if it was closed
   if (!isActive) {
     item.classList.add('active');
@@ -266,7 +266,7 @@ window.addEventListener('load', function() {
     top: 0,
     behavior: 'instant'
   });
-  
+
   setTimeout(function() {
     const homeSection = document.getElementById('home');
     if (homeSection) {
@@ -304,7 +304,7 @@ document.addEventListener('DOMContentLoaded', function() {
     anchor.addEventListener('click', function(e) {
       const href = this.getAttribute('href');
       if (href === '#') return;
-      
+
       e.preventDefault();
       const target = document.querySelector(href);
       if (target) {
@@ -314,33 +314,33 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 
   const contactForm = document.querySelector('.contact-form');
-  
+
   if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
       e.preventDefault();
-      
+
       const submitBtn = this.querySelector('button[type="submit"]');
       const originalText = submitBtn.textContent;
       submitBtn.textContent = 'Sending...';
       submitBtn.disabled = true;
-      
+
       const name = this.querySelector('input[name="name"]').value;
       const email = this.querySelector('input[name="email"]').value;
       const message = this.querySelector('textarea[name="message"]').value;
-      
+
       const now = new Date();
       const time = now.toLocaleString('en-US', {
         dateStyle: 'full',
         timeStyle: 'short'
       });
-      
+
       const templateParams = {
         name: name,
         email: email,
         message: message,
         time: time
       };
-      
+
       emailjs.send('service_fdygfbu', 'template_zbeheni', templateParams)
         .then(function(response) {
           alert('✅ Message sent successfully! I will get back to you soon.');
