@@ -107,7 +107,15 @@ const projects = [
   link: 'https://bookshop-customer.vercel.app/',
   icon: 'fa-book',
   category: 'web'
-}
+},
+    {
+  id: 15,
+  title: 'Student Management',
+  desc: 'Full POS System - Student Management System.',
+  tech: ['HTML', 'CSS', 'JS', 'Supabase'],   
+  link: 'https://dinindu12.github.io/student-management/',
+  icon: 'fa-student',
+  category: 'web'
 ];
 
 // ===== TESTIMONIALS DATA =====
