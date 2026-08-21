@@ -85,7 +85,7 @@ const projects = [
     id: 12,
     title: 'Bot Analytics Dashboard',
     desc: 'Real-time bot analytics dashboard with user growth, command usage, performance metrics, and message activity tracking. Full CRUD operations with live data.',
-    tech: ['HTML', 'CSS', 'JS', 'Chart.js'],
+    tech: ['HTML', 'Word_Press', 'CSS', 'JS', 'Chart.js', 'Bot API'],
     link: 'https://dinindu12.github.io/bot-analytics/',
     icon: 'fa-chart-line',
     category: 'bot'
