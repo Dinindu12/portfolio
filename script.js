@@ -125,6 +125,15 @@ const projects = [
   link: 'https://dinindu12.github.io/network-speed-test/',
   icon: 'fa-wifi',
   category: 'web'
+},
+{
+  id: 16,
+  title: 'Project Calender v4',
+  desc: 'Real-time Working Calender.',
+  tech: ['HTML', 'CSS', 'JS', 'Date API'],
+  link: 'https://dinindu12.github.io/project-calender/',
+  icon: 'fa-calendar',    
+  category: 'web'         
 }
 ];
 
