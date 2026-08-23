@@ -134,6 +134,15 @@ const projects = [
   link: 'https://dinindu12.github.io/project-calender/',
   icon: 'fa-calendar',    
   category: 'web'         
+},
+  {
+  id: 3,
+  title: 'Unlimited Voice Generator',
+  desc: 'AI-powered text-to-speech studio with NVIDIA NIM and Resemble AI. Supports 23 languages, emotional expression, and 24kHz studio audio.',
+  tech: ['HTML', 'CSS', 'JS', 'NVIDIA NIM', 'Resemble AI'],
+  link: 'https://15voice-generator-2026.ai.studio',
+  icon: 'fa-microphone',
+  category: 'bot'
 }
 ];
 
