@@ -1,4 +1,4 @@
-// ===== PROJECTS DATA with CATEGORY =====
+// ===== PROJECTS DATA with CATEGORY (FIXED DUPLICATE IDs) =====
 const projects = [
   {
     id: 1,
@@ -73,7 +73,7 @@ const projects = [
     category: 'web'
   },
   {
-    id: 10,
+    id: 9,          // fixed: was 10
     title: '3D Product Viewer',
     desc: 'Interactive 3D model viewer with rotation, zoom, color customization, and model gallery. Built with Three.js.',
     tech: ['Three.js', 'HTML', 'CSS', 'JS'],
@@ -82,7 +82,7 @@ const projects = [
     category: '3d'
   },
   {
-    id: 12,
+    id: 10,         // fixed: was 12
     title: 'Bot Analytics Dashboard',
     desc: 'Real-time bot analytics dashboard with user growth, command usage, performance metrics, and message activity tracking. Full CRUD operations with live data.',
     tech: ['HTML', 'Word_Press', 'JS', 'Chart.js', 'Bot API'],
@@ -91,7 +91,7 @@ const projects = [
     category: 'bot'
   },
   {
-    id: 13,
+    id: 11,         // fixed: was 13
     title: 'YouTube Music Player',
     desc: 'Search and play YouTube music with real-time playback, queue management, favorites, offline detection, and download features.',
     tech: ['HTML', 'CSS', 'JS', 'YouTube API'],
@@ -100,7 +100,7 @@ const projects = [
     category: 'web'
   },
   {
-    id: 14,
+    id: 12,         // fixed: was 14
     title: 'Aruna Book Shop',
     desc: 'Online Book Shop - Visit and Order books easily.',
     tech: ['HTML', 'CSS', 'JS', 'Vercel'],
@@ -109,41 +109,41 @@ const projects = [
     category: 'web'
   },
   {
-  id: 15,
-  title: 'Student Management',
-  desc: 'Full POS System - Student Management System.',
-  tech: ['HTML', 'CSS', 'JS', 'Supabase'],
-  link: 'https://dinindu12.github.io/student-management/',
-  icon: 'fa-user-graduate',   // <-- changed to this
-  category: 'web'
+    id: 13,         // fixed: was 15
+    title: 'Student Management',
+    desc: 'Full POS System - Student Management System.',
+    tech: ['HTML', 'CSS', 'JS', 'Supabase'],
+    link: 'https://dinindu12.github.io/student-management/',
+    icon: 'fa-user-graduate',
+    category: 'web'
   },
   {
-  id: 16,
-  title: 'Network Speed Test',
-  desc: 'Real-time internet speed analyzer with ping, download & upload metrics. ISP detection, test history, and live progress ring.',
-  tech: ['HTML', 'CSS', 'JS', 'Network API'],
-  link: 'https://dinindu12.github.io/network-speed-test/',
-  icon: 'fa-wifi',
-  category: 'web'
-},
-{
-  id: 16,
-  title: 'Project Calender v4',
-  desc: 'Real-time Working Calender.',
-  tech: ['HTML', 'CSS', 'JS', 'Date API'],
-  link: 'https://dinindu12.github.io/project-calender/',
-  icon: 'fa-calendar',    
-  category: 'web'         
-},
+    id: 14,         // fixed: was 16 (first)
+    title: 'Network Speed Test',
+    desc: 'Real-time internet speed analyzer with ping, download & upload metrics. ISP detection, test history, and live progress ring.',
+    tech: ['HTML', 'CSS', 'JS', 'Network API'],
+    link: 'https://dinindu12.github.io/network-speed-test/',
+    icon: 'fa-wifi',
+    category: 'web'
+  },
   {
-  id: 3,
-  title: 'Unlimited Voice Generator',
-  desc: 'AI-powered text-to-speech studio with NVIDIA NIM and Resemble AI. Supports 23 languages, emotional expression, and 24kHz studio audio.',
-  tech: ['HTML', 'CSS', 'JS', 'NVIDIA NIM', 'Resemble AI'],
-  link: 'https://15voice-generator-2026.ai.studio',
-  icon: 'fa-microphone',
-  category: 'bot'
-}
+    id: 15,         // fixed: was 16 (second) → now unique
+    title: 'Project Calender v4',
+    desc: 'Real-time Working Calender.',
+    tech: ['HTML', 'CSS', 'JS', 'Date API'],
+    link: 'https://dinindu12.github.io/project-calender/',
+    icon: 'fa-calendar',
+    category: 'web'
+  },
+  {
+    id: 16,         // fixed: was 3 (duplicate) → now unique
+    title: 'Unlimited Voice Generator',
+    desc: 'AI-powered text-to-speech studio with NVIDIA NIM and Resemble AI. Supports 23 languages, emotional expression, and 24kHz studio audio.',
+    tech: ['HTML', 'CSS', 'JS', 'NVIDIA NIM', 'Resemble AI'],
+    link: 'https://15voice-generator-2026.ai.studio',
+    icon: 'fa-microphone',
+    category: 'bot'
+  }
 ];
 
 // ===== TESTIMONIALS DATA =====
@@ -385,4 +385,5 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+// Expose toggleFAQ globally (used in inline onclick)
 window.toggleFAQ = toggleFAQ;
