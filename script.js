@@ -151,7 +151,7 @@ const projects = [
     desc: 'Real-time digital clock with date display, time zones, and customizable themes. Clean and minimal design with smooth animations.',
     tech: ['HTML', 'CSS', 'JS'],
     link: 'https://dinindu12.github.io/digital_clock/',
-    download: 'https://www.mediafire.com/file/kmrk09j1tnnydlm/digital_clock.apk/file',
+    download: 'https://www.mediafire.com/file/wh8a4v9yr5pslh3/Digital_Clock_1.0.zip/file',
     icon: 'fa-clock',
     category: 'web'
   },
@@ -161,7 +161,7 @@ const projects = [
     desc: 'Powerful media downloader for videos, audio, and images from multiple platforms. Fast, reliable, and easy to use with a clean interface.',
     tech: ['HTML', 'CSS', 'JS', 'API'],
     link: 'https://dinindu12.github.io/dinux/',
-    download: 'https://www.mediafire.com/file/ty2fj1mlljzn99q/DinuVx_Downloader_1.0.zip/file',
+    download: 'https://www.mediafire.com/file/hmmhk5sozd0ued8/DinuVx_Downloader_1.0.zip/file',
     icon: 'fa-download',
     category: 'web'
   }
